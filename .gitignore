@@ -30,8 +30,12 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# local environment and native service configuration
+.env
+.env.*
+!.env.example
+GoogleService-Info.plist
+google-services.json
 
 # typescript
 *.tsbuildinfo
@@ -39,3 +43,10 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Local signing configuration
+credentials.json
+
+# Local editor settings
+.idea/
+.vscode/
